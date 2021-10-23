@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ClientMap>
+	<configuration version="1.3.0.33 Alpha" debug="false">
+		<init MultiSelect="false" UseHint="false" UseHint_OnlyTopItem="false" UseHintID="false" UseHintNoCaption="true" UseStatusBar="false" ScrollMultiZoom="false" UseZooming="true" SetMapCrossVisible="true" MapCrossBypass="true" ShowConfigButton="false" DisableContextMenus="true" SetMapHistoryVis="false" NoImageCache="false"/>
+		<imagePath>http://rumap.eatlas.ru/scripts/tiling_serv.dll/RMTIL/</imagePath>
+		<geocoderPath>QRS/search.aspx</geocoderPath>
+		<geocoderXPath>QRS/search.aspx</geocoderXPath>
+		<elements zoomScaleRight="false" zoomsRight="true"/>
+		<PrintableArea width="640" height="450"/>
+		<MaxCookiesSaves>20</MaxCookiesSaves>
+		<mapborder>solid 0px gray</mapborder>
+		<MCXYZHistory_count>30</MCXYZHistory_count>
+		<MouseSleepTime>2000</MouseSleepTime>
+		<zoom zoom_scale_visible="true" zoom_levels_visible="true" zoom_nobounds="false" zoom_nocrop="false"/>
+		<StatusBarHints>			
+		</StatusBarHints>
+		<Navigator minimized="true" visible="true" mode="auto">
+			<ModeAuto onleft="true" ontop="false" width="140" height="100"/>
+		</Navigator>
+		<PanelTools mode="auto">
+			<options demo="false" enable_captions="true" allow_all_window="true" simple="false" onclick="true"/>
+			<ModeAuto left="5" top="5"/>
+			<tool no="1" visible="true" locked="false"/>
+			<tool no="2" visible="true" locked="false"/>
+			<tool no="3" visible="true" locked="false"/>
+			<tool no="4" visible="false" locked="false"/>
+			<tool no="5" visible="false" locked="true"/>
+			<tool no="6" visible="false" locked="false"/>
+		</PanelTools>
+		<script timeout="2000">
+		<![CDATA[
+			clmap.wma_postfix = '.&nbsp; <b style="color:maroon">[DEBUG]</b>';
+			clmap.SetWatermark();
+		]]>
+		</script>
+	</configuration>	
+</ClientMap>

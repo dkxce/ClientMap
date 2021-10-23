@@ -1,0 +1,15 @@
+C:\Downloads\CD-REC\TEST\dkxceHTTPServer\dkxceHTTPServer\obj\Debug\ResolveAssemblyReference.cache
+C:\Downloads\CD-REC\TEST\dkxceHTTPServer\dkxceHTTPServer\obj\Debug\dkxceHTTPServer.exe
+C:\Downloads\CD-REC\TEST\dkxceHTTPServer\dkxceHTTPServer\obj\Debug\dkxceHTTPServer.pdb
+C:\Downloads\CD-REC\TEST\dkxceHTTPServer\dkxceHTTPServer.exe
+C:\Downloads\CD-REC\TEST\dkxceHTTPServer\dkxceHTTPServer.pdb
+D:\PROJECTS\VPN JoinPCNetwork (dkxce_VPN_01)\dkxceHTTPServer_Main\dkxceHTTPServer.exe
+D:\PROJECTS\VPN JoinPCNetwork (dkxce_VPN_01)\dkxceHTTPServer_Main\dkxceHTTPServer.pdb
+D:\PROJECTS\VPN JoinPCNetwork (dkxce_VPN_01)\dkxceHTTPServer_Main\dkxceHTTPServer\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\VPN JoinPCNetwork (dkxce_VPN_01)\dkxceHTTPServer_Main\dkxceHTTPServer\obj\Debug\dkxceHTTPServer.exe
+D:\PROJECTS\VPN JoinPCNetwork (dkxce_VPN_01)\dkxceHTTPServer_Main\dkxceHTTPServer\obj\Debug\dkxceHTTPServer.pdb
+C:\Downloads\CD-REC\dkxceHTTPServer\dkxceHTTPServer\obj\Debug\dkxceHTTPServer.exe
+C:\Downloads\CD-REC\dkxceHTTPServer\dkxceHTTPServer\obj\Debug\dkxceHTTPServer.pdb
+C:\Downloads\CD-REC\dkxceHTTPServer\dkxceHTTPServer\obj\Debug\ResolveAssemblyReference.cache
+C:\Downloads\CD-REC\dkxceHTTPServer\dkxceHTTPServer.exe
+C:\Downloads\CD-REC\dkxceHTTPServer\dkxceHTTPServer.pdb

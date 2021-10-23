@@ -1,0 +1,7 @@
+C:\Downloads\CD-REC\TEST\ConsoleApplication1\ConsoleApplication1\bin\Debug\LocalBrowseHTTPServer.exe
+C:\Downloads\CD-REC\TEST\ConsoleApplication1\ConsoleApplication1\bin\Debug\LocalBrowseHTTPServer.pdb
+C:\Downloads\CD-REC\TEST\ConsoleApplication1\ConsoleApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Downloads\CD-REC\TEST\ConsoleApplication1\ConsoleApplication1\obj\Debug\LocalBrowseHTTPServer.exe
+C:\Downloads\CD-REC\TEST\ConsoleApplication1\ConsoleApplication1\obj\Debug\LocalBrowseHTTPServer.pdb
+C:\Downloads\CD-REC\TEST\dkxceHTTPServer\dkxceHTTPServer\obj\Debug\LocalBrowseHTTPServer.exe
+C:\Downloads\CD-REC\TEST\dkxceHTTPServer\dkxceHTTPServer\obj\Debug\LocalBrowseHTTPServer.pdb

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ClientMap_POI version="1.0">
+	<item c="14000x650t000mf9gy" n="Резидент, Офис"/>
+	<item c="16000wmaii000meugd" n="DZ Пущино"/>
+	<!--
+		var xc = new XMLConverter();
+		var POI = xc.fromXMLFile('engine/xml/poi.xml').ClientMap_POI.item;
+	-->
+</ClientMap_POI>

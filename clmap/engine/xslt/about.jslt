@@ -1,0 +1,9 @@
+[foreach('ClientMap/Assembly'){]
+	<center>
+		<br/><b>{Title} v{Version}</b> ({Description})<br/>
+		<sup>{VersionDate}</sup><br/><br/>
+		<span style="font-size:12px;color:#666666;">Map/JS Framework by <a href="mailto:mi{clear}l{empty}okz{none}@{null}gmail{zero}.{empty}com">Milok Zbrozek</a></span>
+		<br/>
+		<span style="font-size:12px;color:#666666;">Engine architecture & development by {Author}</span>
+	</center>
+[}]

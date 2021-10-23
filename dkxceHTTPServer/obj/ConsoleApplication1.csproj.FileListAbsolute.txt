@@ -1,0 +1,5 @@
+C:\Downloads\CD-REC\TEST\ConsoleApplication1\ConsoleApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Downloads\CD-REC\TEST\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Downloads\CD-REC\TEST\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Downloads\CD-REC\TEST\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Downloads\CD-REC\TEST\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

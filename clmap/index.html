@@ -1,0 +1,147 @@
+﻿<html>
+	<head> 
+		<title>TEST RASTR</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<META NAME="CREATOR" CONTENT="Milok Zbrozek (milokz [i hate spammers] gmail.com)"/>
+	</head>
+
+	<!--[if lt IE 7]>
+		<script defer type="text/javascript" src="pngfix.js"></script>
+	<![endif]-->
+	
+	<script language="javascript" src="engine/js/clmap.js"></script>	
+	<script language="javascript" src="engine/js/rpcwmslient.js"></script>	
+	
+	<body style="background:#FFFF66;">
+			<div id="debug"> </div>
+			
+			<!-- RASTR -->
+			<script type="text/javascript">
+			<!--
+				
+				// Последовательность для создание и вызова ClientMap'a
+				// new ClientMap() -> init() -> InitMapBounds() -> writeMainDiv -> !!! Только после все остальные методы !!! -> SetZoomLevels() -> InitZoom() / SetZoomFromLevels()-> SetMapCenter() ->
+				
+				var clmap = new ClientMap('clmap'); // создание объекта класса
+				clmap.init(1000,800); // установка размеров карты и отступов
+				clmap.writeMainDiv(250,0); // вывод поля карты в документ
+				clmap.SetZoomLevels(); // установка уровней зума карты; можно динамически, но после используется `InitZoom  и SetMapCenter` или SetZoomFromLevels или SetZoomFromIndex
+				// P.S: Нефиг динамически трогать
+				clmap.InitZoom();  // установка зума карты; можно динамически, но после используется SetMapCenter
+				
+				if(!clmap.LoadMapXYZfromURL())
+				{
+					clmap.SetZoomFromIndex(8); // установка зума карты; можно динамически
+					clmap.SetMapCenterInLatLon(55.65,37.6);   // установка центра карты и прорисовка растра
+					clmap.upURL();
+				};
+				
+				clmap.NavigateMode(1);  // установка инструмента навигатора
+				
+				// Создание окна о программе
+				function CreateWindow()
+				{
+					var window0 = new TWindow();
+					window0.init(GetWinSize().wi/2-300,50,600,400);
+					window0.setDiv(document.getElementById('windowroot'));
+					window0.SetCaption('<b style="color:green;font-size:16px;">?</b> О программе');
+					window0.DIV.style.padding = '10px 10px 10px 10px';
+					window0.DIV.innerHTML = clmap.GetAboutText();
+					window0.ContainerDIV.style.zIndex = clmap.GetNext_zIndex();
+				}
+				
+			-->
+			</script>
+			
+			<div>
+				Windows:
+				<div id="windowroot" style="position:absolute;left:0px;top:0px;z-index:99;"></div>
+				<div style="font-size:12px;">
+					<a href="#" onClick="pm.Popup(8,42);return false;">Меню</a><br/>
+				</div>
+				<div id="toolz">
+						<span style="font-size:12px;">
+							<a href="#" onclick="clmap.SetSize(640,480);return false;">640 x 480</a> 
+							<a href="#" onclick="clmap.SetSize(800,600);return false;">800 x 600</a>
+							<a href="#" onclick="clmap.SetSize(1000,650);return false;">1000 x 650</a>
+							<a href="#" onclick="clmap.SetSize(1024,768);return false;">1024 x 768</a>
+							<br/>
+							<a href="#" onclick="clmap.MoveMainDiv(0,120);return false;">move 0,120</a>
+							<a href="#" onclick="clmap.MoveMainDiv(200,100);return false;">move 200,100</a>							
+							<a href="#" onclick="clmap.MoveMainDiv(250,0);return false;">move 250,0</a>							
+						</span>
+				</div>
+				<br/>
+				<div id="search_res" style="font-size:12px">
+					&nbsp;
+				</div>
+				<div id="search_done" style="font-size:14px">
+					&nbsp;
+				</div>
+			</div>		
+	</body>
+	
+	<script type="text/javascript">
+	<!--
+		// Создание всплывающего меню
+		var pm = new TPopupMenu(150);
+		pm.setDiv(document.getElementById("windowroot"), true);
+		pm.AddItem('Первый элемент',function(){alert('Выбран первый элемент')});
+		pm.AddItem('Второй элемент',function(){alert('Выбран второй элемент')},true);
+		pm.AddItem('Третий элемент',function(){alert('Выбран третий элемент')});
+		pm.AddItem('Четвертый элемент',function(){alert('Выбран четвертый элемент')});	
+		pm.SetItemVisibility(3,false);
+		pm.AddItem();
+		pm.AddItem('О программе...',CreateWindow);
+				
+		// Храним глобально результат поиска
+		var global_search_result_object = {};
+		//
+		// структура global_search_result_object
+		//
+		// string mask; - маска поиска
+		// string map; - имя MPR (map)
+		// string xmldoc; - response XMLDOM (XMLDocument)
+		// string xmltext; - response Text
+		//
+		// object[] popup; - рекламный блок
+		// object[] addresses; - блок типа Address
+		// object[] not_addresses; - блок типа Not-Address
+		// object[] kontent; - блок типа Kontent
+		//
+		// res.popup[]: type, typecode, items[]
+		// res.popup[].items[]: no, name, url, cx, cy, zoom
+		//
+		// res.addresses[]: type, typecode, items[]
+		// res.addresses[].items[]: idil, layer, name, number, parent, street, count, houses[], cx, cy, zoom
+		//
+		// res.not_addresses[]: type, typecode, items[]
+		// res.not_addresses[].items[]: no, name, idil, layer, tridname, parent, cx, cy, zoom
+		//
+		// res.kontent[]: type, typecode, items[]
+		// res.kontent[].items[]: no, name, idil, layer, address, cx, cy, zoom
+		//
+		
+		// показываем инфо объекта типа Address из кеша результатов поиска
+		function showAddress(addresses_id, item_id)
+		{
+			var itm = global_search_result_object.addresses[addresses_id].items[item_id];
+			alert(itm.name+' '+itm.number+'\n('+itm.parent+')');
+		}
+		
+		// показываем инфо объекта типа Not-Address из кеша результатов поиска
+		function showNoAddress(not_addresses_id, item_id)
+		{
+			var itm = global_search_result_object.not_addresses[not_addresses_id].items[item_id];
+			alert(itm.name+' '+itm.tridname+'\n('+itm.parent+')');
+		}
+		
+		// показываем инфо объекта типа Kontent из кеша результатов поиска
+		function showKontent(kontent_id, item_id)
+		{
+			var itm = global_search_result_object.kontent[kontent_id].items[item_id];
+			alert(itm.name+'\n('+itm.address+')');
+		}		
+	-->
+	</script>
+</html>

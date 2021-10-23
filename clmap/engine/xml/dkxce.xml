@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ClientMap>
+	<configuration version="1.3.0.33 Alpha" debug="false">
+		<init MultiSelect="true" UseHint="true" UseHint_OnlyTopItem="false" UseHintID="true" UseHintNoCaption="true" UseStatusBar="false" ScrollMultiZoom="false" UseZooming="true" SetMapCrossVisible="true" MapCrossBypass="true" ShowConfigButton="false" DisableContextMenus="false" SetMapHistoryVis="true" NoImageCache="false"/>
+		<imagePath>http://rumap.eatlas.ru/scripts/tiling_serv.dll/RMTIL/</imagePath>
+		<geocoderPath>QRS/search.aspx</geocoderPath>
+		<geocoderXPath>QRS/search.aspx</geocoderXPath>
+		<elements zoomScaleRight="true" zoomsRight="true"/>
+		<PrintableArea width="640" height="450"/>
+		<MaxCookiesSaves>20</MaxCookiesSaves>
+		<mapborder>solid 1px gray</mapborder>
+		<MCXYZHistory_count>30</MCXYZHistory_count>
+		<MouseSleepTime>2000</MouseSleepTime>
+		<zoom zoom_scale_visible="true" zoom_levels_visible="true" zoom_nobounds="false" zoom_nocrop="false"/>
+		<StatusBarHints>
+			<item>Для быстрого переключение между масштабами карты используйте линейку зумов справа. При этом центр карты не смещается.</item>
+			<item>Чтобы подвинуть карту нажмите левой кнопкой мыши в видимой области и не отпуская передвиньте указатель в соответствующую сторону</item>
+			<item>Для изменения масштаба карты вы можете использовать колесо прокрутки мыши. Центр карты будет выбран в соответствии с позицией курсора мыши</item>
+			<item>Для удобства навигации вы можете скопировать ссылку на карту в адресной строке браузера и передать, например, по почте. Карта откроется на том же месте.</item>
+			<item><![CDATA[ Наиболее оптимальный браузер для просмотра <a href="http://www.mozilla-europe.org/ru/firefox/" target="_blank">Firefox</a> 2-ой или 3-ей версии ]]></item>
+			<item>Скорость загрузки карты зависит от скорости вашего интернет соединения</item>
+			<item>Для более быстрой работы с картой можно уменьшить размер видимой области</item>
+			<item>Engine architecture &amp; development by Milok Zbrozek</item>
+			<item><![CDATA[ Мы рекомендуем <a href="http://www.mozilla-europe.org/ru/firefox/" target="_blank">Firefox!!!</a> ]]></item>
+			<item><![CDATA[ Карты любят <a href="http://www.mozilla-europe.org/ru/firefox/" target="_blank">Firefox!!!</a> ]]></item>
+		</StatusBarHints>
+		<Navigator minimized="true" visible="true" mode="auto">
+			<ModeAuto onleft="true" ontop="false" width="140" height="100"/>
+		</Navigator>
+		<predirect file="engine/json/dkxce.json"/>
+		<PanelTools mode="auto">
+			<options demo="false" enable_captions="true" allow_all_window="true" simple="false" onclick="true"/>
+			<ModeAuto left="5" top="5"/>
+			<tool no="1" visible="true" locked="false"/>
+			<tool no="2" visible="true" locked="false"/>
+			<tool no="3" visible="true" locked="false"/>
+			<tool no="4" visible="true" locked="false"/>
+			<tool no="5" visible="false" locked="true"/>
+			<tool no="6" visible="true" locked="false"/>
+		</PanelTools>
+		<script timeout="2000">
+		<![CDATA[
+			clmap.wma_postfix = '.&nbsp; <b style="color:maroon">Сборка: Милок Зброжек</b>';
+			clmap.SetWatermark();
+		]]>
+		</script>
+	</configuration>	
+</ClientMap>

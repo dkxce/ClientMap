@@ -1,0 +1,10 @@
+#cursorMessageDiv {
+	position: absolute;
+	z-index: 99999;
+	border: solid 1px silver;
+	background: #FEFFE1;
+	padding: 2px 5px 2px 10px;
+	margin: 0px;
+	display: none;
+	font-size: 14px;
+}
