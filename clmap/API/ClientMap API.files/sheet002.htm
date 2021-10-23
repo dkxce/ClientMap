@@ -1,0 +1,999 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<link id=Main-File rel=Main-File href="../ClientMap%20API.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Edit-Time-Data href=editdata.mso>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:" ";}
+@page
+	{mso-header-data:"&\041B&\0022Arial\,\043F\043E\043B\0443\0436\0438\0440\043D\044B\0439\0022ClientMap version 1\.2\.0\.16&\0426&\0022Arial\,\043F\043E\043B\0443\0436\0438\0440\043D\044B\0439\0022\0421\0412\041E\0419\0421\0422\0412\0410&\041F&\0421 \0438\0437 &\041A";
+	margin:.98in .79in .98in .79in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-page-orientation:landscape;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(1);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../ClientMap%20API.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]><!--[if gte mso 9]><xml>
+ <x:WorksheetOptions>
+  <x:Print>
+   <x:ValidPrinterInfo/>
+   <x:PaperSizeIndex>9</x:PaperSizeIndex>
+   <x:HorizontalResolution>600</x:HorizontalResolution>
+   <x:VerticalResolution>600</x:VerticalResolution>
+  </x:Print>
+  <x:CodeName>&#1051;&#1080;&#1089;&#1090;2</x:CodeName>
+  <x:TopRowVisible>57</x:TopRowVisible>
+  <x:Panes>
+   <x:Pane>
+    <x:Number>3</x:Number>
+    <x:ActiveRow>84</x:ActiveRow>
+    <x:ActiveCol>3</x:ActiveCol>
+   </x:Pane>
+  </x:Panes>
+  <x:ProtectContents>False</x:ProtectContents>
+  <x:ProtectObjects>False</x:ProtectObjects>
+  <x:ProtectScenarios>False</x:ProtectScenarios>
+ </x:WorksheetOptions>
+</xml><![endif]-->
+</head>
+
+<body link=blue vlink=purple>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=920 style='border-collapse:
+ collapse;table-layout:fixed;width:690pt'>
+ <col width=19 style='mso-width-source:userset;mso-width-alt:694;width:14pt'>
+ <col class=xl62 width=54 style='mso-width-source:userset;mso-width-alt:1974;
+ width:41pt'>
+ <col class=xl148 width=73 style='mso-width-source:userset;mso-width-alt:2669;
+ width:55pt'>
+ <col class=xl24 width=151 style='mso-width-source:userset;mso-width-alt:5522;
+ width:113pt'>
+ <col width=111 style='mso-width-source:userset;mso-width-alt:4059;width:83pt'>
+ <col width=113 style='mso-width-source:userset;mso-width-alt:4132;width:85pt'>
+ <col width=207 style='mso-width-source:userset;mso-width-alt:7570;width:155pt'>
+ <col width=64 span=3 style='width:48pt'>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 colspan=3 width=146 style='height:12.75pt;
+  mso-ignore:colspan;width:110pt'>&#1057;&#1074;&#1086;&#1081;&#1089;&#1090;&#1074;&#1072;
+  ClientMap</td>
+  <td class=xl56 width=151 style='width:113pt'></td>
+  <td class=xl28 width=111 style='width:83pt'></td>
+  <td class=xl29 width=113 style='width:85pt'></td>
+  <td width=207 style='width:155pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl67 height=15 style='height:11.25pt'>
+  <td height=15 class=xl67 style='height:11.25pt'></td>
+  <td class=xl68></td>
+  <td class=xl141>&#1090;&#1080;&#1087;</td>
+  <td class=xl69>&#1080;&#1084;&#1103;</td>
+  <td colspan=3 class=xl242>&#1086;&#1087;&#1080;&#1089;&#1072;&#1085;&#1080;&#1077;</td>
+  <td colspan=3 class=xl67 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl48>public</td>
+  <td class=xl150>bool</td>
+  <td class=xl57>MultiSelect</td>
+  <td colspan=3 class=xl65 style='border-right:.5pt solid black'>&#1042;&#1099;&#1079;&#1086;&#1074;
+  &#1087;&#1088;&#1080; &#1082;&#1083;&#1080;&#1082;&#1077;
+  &#1089;&#1086;&#1073;&#1099;&#1090;&#1080;&#1103; &#1091;
+  &#1074;&#1089;&#1077;&#1093;
+  &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1086;&#1074; &#1085;&#1072;&#1076;
+  &#1082;&#1072;&#1088;&#1090;&#1086;&#1081;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl32></td>
+  <td class=xl138></td>
+  <td class=xl56></td>
+  <td class=xl28></td>
+  <td class=xl29></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl70>public</td>
+  <td class=xl193>ParseURL</td>
+  <td class=xl71>ParseURL</td>
+  <td class=xl72 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1042;&#1086;&#1079;&#1074;&#1088;&#1072;&#1097;&#1072;&#1077;&#1090;
+  &#1101;&#1082;&#1079;&#1077;&#1084;&#1087;&#1083;&#1103;&#1088;
+  &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1072; <font class="font5">ParseURL</font></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl70>public</td>
+  <td class=xl194>bool</td>
+  <td class=xl71>MapCrossVisible</td>
+  <td class=xl72 colspan=2 style='mso-ignore:colspan'>&#1042;&#1080;&#1076;&#1080;&#1084;&#1086;&#1089;&#1090;&#1100;
+  &#1082;&#1088;&#1077;&#1089;&#1090;&#1080;&#1082;&#1072; &#1074;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1077;
+  &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+  <td class=xl45>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl70>public</td>
+  <td class=xl194>bool</td>
+  <td class=xl71>MapCrossBypass</td>
+  <td class=xl72 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1085;&#1077;
+  &#1086;&#1090;&#1086;&#1073;&#1088;&#1072;&#1078;&#1072;&#1090;&#1100;
+  &#1082;&#1088;&#1077;&#1089;&#1090;&#1080;&#1082; (if false)
+  &#1087;&#1088;&#1080; mapdown &amp; mapmove</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl81 style='border-top:none'>&nbsp;</td>
+  <td class=xl195 style='border-top:none'>&nbsp;</td>
+  <td class=xl82 style='border-top:none'>&nbsp;</td>
+  <td class=xl83 style='border-top:none'>&nbsp;</td>
+  <td class=xl83 style='border-top:none'>&nbsp;</td>
+  <td class=xl84 style='border-top:none'>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl85>public</td>
+  <td class=xl196>bool</td>
+  <td class=xl86>UseStatusBar</td>
+  <td class=xl87 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1048;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1100;
+  &#1087;&#1086;&#1076;&#1089;&#1082;&#1072;&#1079;&#1082;&#1080;
+  &#1089;&#1090;&#1088;&#1086;&#1082;&#1080;
+  &#1089;&#1086;&#1089;&#1090;&#1086;&#1103;&#1085;&#1080;&#1103;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl70>public</td>
+  <td class=xl194>string[]</td>
+  <td class=xl71>StatusBarHints</td>
+  <td class=xl72 colspan=2 style='mso-ignore:colspan'>&#1052;&#1072;&#1089;&#1089;&#1080;&#1074;
+  &#1087;&#1086;&#1076;&#1089;&#1082;&#1072;&#1079;&#1086;&#1082;
+  &#1089;&#1090;&#1088;&#1086;&#1082;&#1080;
+  &#1089;&#1086;&#1089;&#1090;&#1086;&#1103;&#1085;&#1080;&#1103;</td>
+  <td class=xl45>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl70>public</td>
+  <td class=xl193>Layers</td>
+  <td class=xl71>MapLayers</td>
+  <td class=xl72 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1097;&#1072;&#1077;&#1090;
+  &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  &#1082;&#1083;&#1072;&#1089;&#1089;&#1072; <font class="font5">Layers</font><font
+  class="font0"> &#1086;&#1090; &#1082;&#1072;&#1088;&#1090;&#1099;</font></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl70>public</td>
+  <td class=xl194>bool</td>
+  <td class=xl71>ScrollMultiZoom</td>
+  <td class=xl72 colspan=6 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1052;&#1091;&#1083;&#1100;&#1090;&#1080;&#1089;&#1082;&#1088;&#1086;&#1083;&#1083;
+  - &#1089;&#1082;&#1086;&#1083;&#1100;&#1082;&#1086;
+  &#1087;&#1088;&#1086;&#1082;&#1088;&#1091;&#1090;&#1080;&#1083;&#1080;
+  &#1084;&#1099;&#1096;&#1082;&#1091;, &#1089;&#1090;&#1086;&#1083;&#1100;&#1082;&#1086;
+  &#1088;&#1072;&#1079; &#1080; &#1079;&#1091;&#1084;
+  &#1080;&#1079;&#1084;&#1077;&#1085;&#1080;&#1083;&#1080;.
+  &#1048;&#1085;&#1072;&#1095;&#1077;
+  &#1074;&#1099;&#1078;&#1080;&#1076;&#1072;&#1077;&#1084; &#1090;&#1072;&#1081;&#1084;&#1072;&#1091;&#1090;.</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70 style='border-top:none'>private</td>
+  <td class=xl194 style='border-top:none'>int</td>
+  <td class=xl71 style='border-top:none'>scrollSleepTime</td>
+  <td class=xl72 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1058;&#1072;&#1081;&#1084;&#1072;&#1091;&#1090;
+  &#1089;&#1082;&#1088;&#1086;&#1083;&#1083;&#1072;, &#1087;&#1086;
+  &#1091;&#1084;&#1086;&#1083;&#1095;&#1072;&#1085;&#1080;&#1102; 200
+  &#1084;&#1089;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl70>public</td>
+  <td class=xl194>bool</td>
+  <td class=xl71>DisableContextMenus</td>
+  <td class=xl72 colspan=2 style='mso-ignore:colspan'>&#1054;&#1090;&#1082;&#1083;&#1102;&#1095;&#1080;&#1090;&#1100;
+  &#1082;&#1086;&#1085;&#1090;&#1077;&#1082;&#1089;&#1090;&#1085;&#1099;&#1077;
+  &#1084;&#1077;&#1085;&#1102; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+  <td class=xl45>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl70>public</td>
+  <td class=xl194>bool</td>
+  <td class=xl71>UseHint</td>
+  <td class=xl72 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1048;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;
+  &#1074;&#1089;&#1087;&#1083;&#1099;&#1074;&#1072;&#1102;&#1097;&#1080;&#1093;
+  &#1087;&#1086;&#1076;&#1089;&#1082;&#1072;&#1079;&#1086;&#1082;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl70>public</td>
+  <td class=xl194>bool</td>
+  <td class=xl71>UseHint_OnlyTopItem</td>
+  <td class=xl72 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1042;&#1099;&#1074;&#1086;&#1076;&#1080;&#1090;&#1100;
+  &#1087;&#1086;&#1076;&#1089;&#1082;&#1072;&#1079;&#1082;&#1091;
+  &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1082;
+  &#1074;&#1077;&#1088;&#1093;&#1085;&#1077;&#1084;&#1091;
+  &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1091;
+  &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl70>public</td>
+  <td class=xl194>bool</td>
+  <td class=xl71>UseHintID</td>
+  <td class=xl72 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1048;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;
+  &#1074; &#1087;&#1086;&#1076;&#1089;&#1082;&#1072;&#1079;&#1082;&#1080; ID
+  &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1072;
+  (&#1077;&#1089;&#1083;&#1080; &#1085;&#1077;
+  &#1079;&#1072;&#1076;&#1072;&#1085;&#1086; &#1089;&#1074;-&#1074;&#1086;
+  hint)</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl70>public</td>
+  <td class=xl194>bool</td>
+  <td class=xl71>UseHintNoCaption</td>
+  <td class=xl72 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1053;&#1077;
+  &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1100;
+  caption &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1072;
+  &#1087;&#1088;&#1080;
+  &#1092;&#1086;&#1088;&#1084;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1080;
+  &#1087;&#1086;&#1076;&#1089;&#1082;&#1072;&#1079;&#1082;&#1080;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl70>public</td>
+  <td class=xl194>double</td>
+  <td class=xl71>MapZoom<font class="font14"> (get)</font></td>
+  <td class=xl72 colspan=2 style='mso-ignore:colspan'>&#1058;&#1077;&#1082;&#1091;&#1097;&#1080;&#1081;
+  Zoom &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+  <td class=xl45>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70>private</td>
+  <td class=xl194>double[]</td>
+  <td class=xl71>ZoomLevels</td>
+  <td class=xl72 colspan=2 style='mso-ignore:colspan'>&#1052;&#1072;&#1089;&#1089;&#1080;&#1074;
+  &#1079;&#1091;&#1084;&#1086;&#1074; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+  <td class=xl45>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70>private</td>
+  <td class=xl194>int</td>
+  <td class=xl71>zoom_start_from</td>
+  <td class=xl72 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1057;
+  &#1082;&#1072;&#1082;&#1086;&#1075;&#1086; &#1079;&#1091;&#1084;&#1072;
+  &#1085;&#1072;&#1095;&#1080;&#1085;&#1072;&#1077;&#1090;&#1089;&#1103;
+  &#1082;&#1072;&#1088;&#1090;&#1099; (&#1086;&#1090; 0)</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70>private</td>
+  <td class=xl194>int</td>
+  <td class=xl71>map_width</td>
+  <td class=xl72 colspan=2 style='mso-ignore:colspan'>&#1096;&#1080;&#1088;&#1080;&#1085;&#1072;
+  &#1082;&#1072;&#1088;&#1090;&#1099; &#1074;
+  &#1087;&#1080;&#1082;&#1089;&#1077;&#1083;&#1103;&#1093;</td>
+  <td class=xl45>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 colspan=3 style='height:12.75pt;mso-ignore:colspan'>&#1057;&#1074;&#1086;&#1081;&#1089;&#1090;&#1074;&#1072;
+  ClientMap</td>
+  <td class=xl56></td>
+  <td class=xl28></td>
+  <td class=xl29></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl67 style='height:12.75pt'></td>
+  <td class=xl68></td>
+  <td class=xl141>&#1090;&#1080;&#1087;</td>
+  <td class=xl69>&#1080;&#1084;&#1103;</td>
+  <td colspan=3 class=xl242>&#1086;&#1087;&#1080;&#1089;&#1072;&#1085;&#1080;&#1077;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70>private</td>
+  <td class=xl194>int</td>
+  <td class=xl71>map_height</td>
+  <td class=xl72 colspan=2 style='mso-ignore:colspan'>&#1074;&#1099;&#1089;&#1086;&#1090;&#1072;
+  &#1082;&#1072;&#1088;&#1090;&#1099; &#1074;
+  &#1087;&#1080;&#1082;&#1089;&#1077;&#1083;&#1103;&#1093;</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70 style='border-top:none'>private</td>
+  <td class=xl194 style='border-top:none'>int</td>
+  <td class=xl71 style='border-top:none'>map_left</td>
+  <td class=xl72 colspan=2 style='mso-ignore:colspan'>&#1087;&#1086;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1077;
+  &#1082;&#1072;&#1088;&#1090;&#1099; &#1074;
+  &#1087;&#1080;&#1082;&#1089;&#1077;&#1083;&#1103;&#1093;</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70 style='border-top:none'>private</td>
+  <td class=xl194 style='border-top:none'>int</td>
+  <td class=xl71 style='border-top:none'>map_top</td>
+  <td class=xl72 colspan=2 style='mso-ignore:colspan'>&#1087;&#1086;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1077;
+  &#1082;&#1072;&#1088;&#1090;&#1099; &#1074;
+  &#1087;&#1080;&#1082;&#1089;&#1077;&#1083;&#1103;&#1093;</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70 style='border-top:none'>private</td>
+  <td class=xl194 style='border-top:none'>HTMLObj</td>
+  <td class=xl71 style='border-top:none'>mainDiv</td>
+  <td class=xl72 style='border-top:none'>&nbsp;</td>
+  <td class=xl72 style='border-top:none'>&nbsp;</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70 style='border-top:none'>private</td>
+  <td class=xl194 style='border-top:none'>HTMLObj</td>
+  <td class=xl71 style='border-top:none'>zoomDiv</td>
+  <td class=xl72 style='border-top:none'>&nbsp;</td>
+  <td class=xl72 style='border-top:none'>&nbsp;</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70 style='border-top:none'>private</td>
+  <td class=xl194 style='border-top:none'>HTMLObj</td>
+  <td class=xl71 style='border-top:none'>coverDiv</td>
+  <td class=xl72 style='border-top:none'>&nbsp;</td>
+  <td class=xl72 style='border-top:none'>&nbsp;</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70 style='border-top:none'>private</td>
+  <td class=xl194 style='border-top:none'>HTMLObj</td>
+  <td class=xl71 style='border-top:none'>rastrProtection</td>
+  <td class=xl72 style='border-top:none'>&nbsp;</td>
+  <td class=xl72 style='border-top:none'>&nbsp;</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70 style='border-top:none'>private</td>
+  <td class=xl194 style='border-top:none'>HTMLObj</td>
+  <td class=xl71 style='border-top:none'>zoomscaleDIV</td>
+  <td class=xl72 style='border-top:none'>&nbsp;</td>
+  <td class=xl72 style='border-top:none'>&nbsp;</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70 style='border-top:none'>private</td>
+  <td class=xl194 style='border-top:none'>HTMLObj</td>
+  <td class=xl71 style='border-top:none'>rastrDiv</td>
+  <td class=xl72 style='border-top:none'>&nbsp;</td>
+  <td class=xl72 style='border-top:none'>&nbsp;</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl81>private</td>
+  <td class=xl195>bool[]</td>
+  <td class=xl82>flag_ms_overs</td>
+  <td class=xl83 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>0,1,2
+  - reserved; &#1091;&#1089;&#1090;&#1072;&#1085;&#1086;&#1074;&#1082;&#1072;
+  &#1092;&#1083;&#1072;&#1075;&#1086;&#1074;,
+  &#1082;&#1086;&#1090;&#1086;&#1088;&#1099;&#1081;
+  &#1086;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1103;&#1077;&#1090;
+  &#1089;&#1086;&#1073;&#1099;&#1090;&#1080;&#1103;
+  &#1084;&#1099;&#1096;&#1080;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl85>&nbsp;</td>
+  <td class=xl196>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl87 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'><span
+  style='mso-spacerun:yes'>&nbsp;</span>&#1085;&#1072;&#1076;
+  &#1082;&#1072;&#1088;&#1090;&#1086;&#1081; (true -
+  &#1087;&#1077;&#1088;&#1077;&#1082;&#1088;&#1099;&#1074;&#1072;&#1090;&#1100;
+  &#1089;&#1086;&#1073;&#1099;&#1090;&#1080;&#1103;; false - &#1087;&#1088;&#1086;&#1087;&#1091;&#1089;&#1082;&#1072;&#1090;&#1100;)</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl81>public</td>
+  <td class=xl195>bool</td>
+  <td class=xl82>zoomScaleRight</td>
+  <td class=xl83 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1088;&#1080;&#1089;&#1086;&#1074;&#1072;&#1090;&#1100;
+  &#1089;&#1083;&#1077;&#1074;&#1072;
+  &#1084;&#1072;&#1089;&#1096;&#1090;&#1072;&#1073;&#1085;&#1091;&#1102;
+  &#1083;&#1080;&#1085;&#1077;&#1081;&#1082;&#1091;
+  &#1082;&#1072;&#1088;&#1090;&#1099; &#1080;&#1083;&#1080;
+  &#1089;&#1087;&#1088;&#1072;&#1074;&#1072; &#1085;&#1072;&#1076; watermark</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl139 colspan=3 style='mso-ignore:colspan'>&#1089;
+  &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.1.0.17 &#1080;
+  &#1074;&#1099;&#1096;&#1077;</td>
+  <td class=xl174 colspan=2 style='mso-ignore:colspan'>*
+  &#1086;&#1073;&#1086;&#1079;&#1085;&#1072;&#1095;&#1072;&#1077;&#1090;&#1089;&#1103;
+  &#1087;&#1077;&#1088;&#1077;&#1076; writeMainDiv</td>
+  <td class=xl38>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl81>public</td>
+  <td class=xl195>bool</td>
+  <td class=xl82>zoomsRight</td>
+  <td class=xl83 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1088;&#1080;&#1089;&#1086;&#1074;&#1072;&#1090;&#1100;
+  &#1089;&#1083;&#1077;&#1074;&#1072;
+  &#1087;&#1072;&#1085;&#1077;&#1083;&#1100;
+  &#1084;&#1072;&#1089;&#1096;&#1090;&#1072;&#1073;&#1086;&#1074;
+  &#1080;&#1083;&#1080; &#1089;&#1087;&#1088;&#1072;&#1074;&#1072;
+  &#1089;&#1074;&#1077;&#1088;&#1093;&#1091;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl139 colspan=3 style='mso-ignore:colspan'>&#1089;
+  &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.1.0.17 &#1080;
+  &#1074;&#1099;&#1096;&#1077;</td>
+  <td class=xl174 colspan=2 style='mso-ignore:colspan'>*
+  &#1086;&#1073;&#1086;&#1079;&#1085;&#1072;&#1095;&#1072;&#1077;&#1090;&#1089;&#1103;
+  &#1087;&#1077;&#1088;&#1077;&#1076; writeMainDiv</td>
+  <td class=xl38>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl81>public</td>
+  <td class=xl195>int</td>
+  <td class=xl82>MCXYZHistory_count</td>
+  <td class=xl83 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1052;&#1072;&#1082;&#1089;&#1080;&#1084;&#1072;&#1083;&#1100;&#1085;&#1086;&#1077;
+  &#1082;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1090;&#1074;&#1086;
+  &#1079;&#1072;&#1087;&#1080;&#1089;&#1077;&#1081; &#1074; <font class="font5">&#1048;&#1089;&#1090;&#1086;&#1088;&#1080;&#1080;
+  &#1050;&#1072;&#1088;&#1090;&#1099;</font></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl139 colspan=3 style='mso-ignore:colspan'>&#1089;
+  &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.2.0.2 &#1080;
+  &#1074;&#1099;&#1096;&#1077;</td>
+  <td class=xl87>&nbsp;</td>
+  <td class=xl87>&nbsp;</td>
+  <td class=xl38>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl81>public</td>
+  <td class=xl195>bool</td>
+  <td class=xl82>UseZooming</td>
+  <td class=xl83 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1048;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1100;
+  &#1088;&#1072;&#1089;&#1090;&#1103;&#1075;&#1080;&#1074;&#1072;&#1085;&#1080;&#1077;
+  &#1080; &#1089;&#1078;&#1072;&#1090;&#1080;&#1077;
+  &#1082;&#1072;&#1088;&#1090;&#1099; &#1087;&#1088;&#1080;
+  &#1080;&#1079;&#1084;&#1077;&#1085;&#1077;&#1085;&#1080;&#1080;
+  &#1079;&#1091;&#1084;&#1072;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl139 colspan=3 style='mso-ignore:colspan'>&#1089;
+  &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.2.0.2 &#1080;
+  &#1074;&#1099;&#1096;&#1077;</td>
+  <td class=xl174>&nbsp;</td>
+  <td class=xl87>&nbsp;</td>
+  <td class=xl38>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl81>private</td>
+  <td class=xl195>bool</td>
+  <td class=xl82>url_latlon</td>
+  <td class=xl83 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1048;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;
+  &#1074; &#1091;&#1088;&#1083;&#1077;
+  &#1096;&#1080;&#1088;&#1086;&#1090;&#1099; &#1080;
+  &#1076;&#1086;&#1083;&#1075;&#1086;&#1090;&#1099; &#1080;&#1083;&#1080; &#1084;&#1077;&#1090;&#1088;&#1086;&#1074;
+  X &#1084;&#1077;&#1090;&#1088;&#1086;&#1074; Y</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl85>&nbsp;</td>
+  <td class=xl196>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl174 colspan=2 style='mso-ignore:colspan'>*
+  &#1086;&#1073;&#1086;&#1079;&#1085;&#1072;&#1095;&#1072;&#1077;&#1090;&#1089;&#1103;
+  &#1087;&#1077;&#1088;&#1077;&#1076; writeMainDiv</td>
+  <td class=xl38>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl81>private</td>
+  <td class=xl195>string</td>
+  <td class=xl82>border</td>
+  <td class=xl83>&#1043;&#1088;&#1072;&#1085;&#1080;&#1094;&#1099;
+  &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+  <td class=xl83>&nbsp;</td>
+  <td class=xl84>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl85>&nbsp;</td>
+  <td class=xl196>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl174 colspan=2 style='mso-ignore:colspan'>*
+  &#1086;&#1073;&#1086;&#1079;&#1085;&#1072;&#1095;&#1072;&#1077;&#1090;&#1089;&#1103;
+  &#1087;&#1077;&#1088;&#1077;&#1076; writeMainDiv</td>
+  <td class=xl38>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl81>private</td>
+  <td class=xl195>int</td>
+  <td class=xl181>Configuration</td>
+  <td class=xl99 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1054;&#1075;&#1088;&#1072;&#1085;&#1080;&#1095;&#1077;&#1085;&#1080;&#1077;
+  &#1085;&#1072; &#1095;&#1080;&#1089;&#1083;&#1086;
+  &#1089;&#1086;&#1093;&#1088;&#1072;&#1085;&#1077;&#1085;&#1085;&#1099;&#1093;
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090; &#1074;
+  &#1082;&#1091;&#1082;&#1072;&#1093;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl85>&nbsp;</td>
+  <td class=xl196>&nbsp;</td>
+  <td class=xl182>.MaxCookiesSaves</td>
+  <td class=xl98>&nbsp;</td>
+  <td class=xl87>&nbsp;</td>
+  <td class=xl38>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 colspan=3 style='height:12.75pt;mso-ignore:colspan'>&#1057;&#1074;&#1086;&#1081;&#1089;&#1090;&#1074;&#1072;
+  ClientMap</td>
+  <td class=xl56></td>
+  <td class=xl28></td>
+  <td class=xl29></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl67 style='height:12.75pt'></td>
+  <td class=xl68></td>
+  <td class=xl141>&#1090;&#1080;&#1087;</td>
+  <td class=xl69>&#1080;&#1084;&#1103;</td>
+  <td colspan=3 class=xl242>&#1086;&#1087;&#1080;&#1089;&#1072;&#1085;&#1080;&#1077;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70>private</td>
+  <td class=xl194>int</td>
+  <td class=xl71>PrintableAreaX</td>
+  <td class=xl72 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1064;&#1080;&#1088;&#1080;&#1085;&#1072;
+  &#1086;&#1073;&#1083;&#1072;&#1089;&#1090;&#1080;
+  &#1087;&#1077;&#1095;&#1072;&#1090;&#1080;
+  &#1087;&#1088;&#1077;&#1076;&#1087;&#1088;&#1086;&#1089;&#1084;&#1086;&#1090;&#1088;&#1072;
+  (&#1089; &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.2.0.15 &#1080;
+  &#1074;&#1099;&#1096;&#1077;)</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl70>private</td>
+  <td class=xl194>int</td>
+  <td class=xl71>PrintableAreaY</td>
+  <td class=xl72 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1042;&#1099;&#1089;&#1086;&#1090;&#1072;
+  &#1086;&#1073;&#1083;&#1072;&#1089;&#1090;&#1080;
+  &#1087;&#1077;&#1095;&#1072;&#1090;&#1080;
+  &#1087;&#1088;&#1077;&#1076;&#1087;&#1088;&#1086;&#1089;&#1084;&#1086;&#1090;&#1088;&#1072;
+  (&#1089; &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.2.0.15 &#1080;
+  &#1074;&#1099;&#1096;&#1077;)</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl81>private</td>
+  <td class=xl195>HTMLObj</td>
+  <td class=xl82>overMapDiv</td>
+  <td class=xl83 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>DIV
+  &#1085;&#1072;&#1076; &#1088;&#1072;&#1089;&#1090;&#1088;&#1086;&#1084;
+  &#1089; &#1101;&#1082;&#1088;&#1072;&#1085;&#1085;&#1099;&#1084;&#1080;
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;&#1084;&#1080;
+  &#1082;&#1072;&#1088;&#1090;&#1099; {0,0;wi,he}</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl139 colspan=3 style='mso-ignore:colspan'>&#1089;
+  &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.2.0.15 &#1080;
+  &#1074;&#1099;&#1096;&#1077;</td>
+  <td class=xl87 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1052;&#1086;&#1078;&#1077;&#1090;
+  &#1073;&#1099;&#1090;&#1100;
+  &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1085;
+  &#1076;&#1083;&#1103;
+  &#1086;&#1090;&#1088;&#1080;&#1089;&#1086;&#1074;&#1082;&#1080;
+  &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1086;&#1074;
+  &#1085;&#1072;&#1076; &#1088;&#1072;&#1089;&#1090;&#1088;&#1086;&#1084;.</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl81>public</td>
+  <td class=xl195>int</td>
+  <td class=xl82>MouseSleepTime</td>
+  <td class=xl83 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1042;&#1088;&#1077;&#1084;&#1103;
+  &#1090;&#1072;&#1081;&#1084;&#1072;&#1091;&#1090;&#1072;
+  &#1089;&#1086;&#1073;&#1099;&#1090;&#1080;&#1103; MapEvents.MouseSleep
+  (&#1074; &#1084;&#1089;)</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl139 colspan=3 style='mso-ignore:colspan'>&#1089;
+  &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.2.0.28 &#1080;
+  &#1074;&#1099;&#1096;&#1077;</td>
+  <td class=xl87>&nbsp;</td>
+  <td class=xl87>&nbsp;</td>
+  <td class=xl38>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl81>private</td>
+  <td class=xl195>object</td>
+  <td class=xl82>predirect</td>
+  <td class=xl82 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>predirect<font
+  class="font0">,
+  &#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1077;&#1083;&#1100;&#1089;&#1082;&#1080;&#1081;
+  &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;,
+  &#1079;&#1072;&#1075;&#1088;&#1091;&#1078;&#1072;&#1077;&#1084;&#1099;&#1081;
+  &#1074; &#1092;&#1086;&#1088;&#1084;&#1072;&#1090;&#1077; js</font><span
+  style='display:none'><font class="font0">on</font></span></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl119 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl139 colspan=3 style='mso-ignore:colspan'>&#1089;
+  &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.2.0.34 &#1080;
+  &#1074;&#1099;&#1096;&#1077;</td>
+  <td class=xl87 colspan=2 style='mso-ignore:colspan'>&#1080;&#1079;
+  &#1092;&#1072;&#1081;&#1083;&#1072; <font class="font5">engine/json/predirect.json</font></td>
+  <td class=xl38>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl81>public</td>
+  <td class=xl195>bool</td>
+  <td class=xl82>NoImageCache</td>
+  <td class=xl83 colspan=2 style='mso-ignore:colspan'>&#1053;&#1077;
+  &#1082;&#1077;&#1096;&#1080;&#1088;&#1086;&#1074;&#1072;&#1090;&#1100;
+  &#1087;&#1086;&#1076;&#1083;&#1086;&#1078;&#1082;&#1091;
+  &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+  <td class=xl84>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl139 colspan=3 style='mso-ignore:colspan'>&#1089;
+  &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.3.0.1 &#1080;
+  &#1074;&#1099;&#1096;&#1077;</td>
+  <td class=xl87>&nbsp;</td>
+  <td class=xl87>&nbsp;</td>
+  <td class=xl38>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl62></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl221 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl81>private</td>
+  <td class=xl195>HTMLObj</td>
+  <td class=xl82>rastrBackground</td>
+  <td class=xl83>&nbsp;</td>
+  <td class=xl83>&nbsp;</td>
+  <td class=xl84>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl221 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl139 colspan=3 style='mso-ignore:colspan'>&#1089;
+  &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.3.0.1 &#1080;
+  &#1074;&#1099;&#1096;&#1077;</td>
+  <td class=xl87>&nbsp;</td>
+  <td class=xl87>&nbsp;</td>
+  <td class=xl38>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=19 style='width:14pt'></td>
+  <td width=54 style='width:41pt'></td>
+  <td width=73 style='width:55pt'></td>
+  <td width=151 style='width:113pt'></td>
+  <td width=111 style='width:83pt'></td>
+  <td width=113 style='width:85pt'></td>
+  <td width=207 style='width:155pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

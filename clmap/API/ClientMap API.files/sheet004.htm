@@ -1,0 +1,1207 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<link id=Main-File rel=Main-File href="../ClientMap%20API.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Edit-Time-Data href=editdata.mso>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:" ";}
+@page
+	{mso-header-data:"&\041B&\0022Arial\,\043F\043E\043B\0443\0436\0438\0440\043D\044B\0439\0022ClientMap version 1\.2\.0\.16&\0426&\0022Arial\,\043F\043E\043B\0443\0436\0438\0440\043D\044B\0439\0022\0421\041E\0411\042B\0422\0418\042F\, MapEvents\, GlobalEvents&\041F&\0421 \0438\0437 &\041A";
+	margin:.98in .79in .98in .79in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-page-orientation:landscape;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(3);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../ClientMap%20API.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]><!--[if gte mso 9]><xml>
+ <x:WorksheetOptions>
+  <x:Print>
+   <x:ValidPrinterInfo/>
+   <x:PaperSizeIndex>9</x:PaperSizeIndex>
+   <x:HorizontalResolution>600</x:HorizontalResolution>
+   <x:VerticalResolution>600</x:VerticalResolution>
+  </x:Print>
+  <x:CodeName>&#1051;&#1080;&#1089;&#1090;3</x:CodeName>
+  <x:TopRowVisible>69</x:TopRowVisible>
+  <x:Panes>
+   <x:Pane>
+    <x:Number>3</x:Number>
+    <x:ActiveRow>117</x:ActiveRow>
+    <x:ActiveCol>5</x:ActiveCol>
+   </x:Pane>
+  </x:Panes>
+  <x:ProtectContents>False</x:ProtectContents>
+  <x:ProtectObjects>False</x:ProtectObjects>
+  <x:ProtectScenarios>False</x:ProtectScenarios>
+ </x:WorksheetOptions>
+</xml><![endif]-->
+</head>
+
+<body link=blue vlink=purple>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=922 style='border-collapse:
+ collapse;table-layout:fixed;width:692pt'>
+ <col width=14 style='mso-width-source:userset;mso-width-alt:512;width:11pt'>
+ <col class=xl148 width=64 style='width:48pt'>
+ <col class=xl24 width=225 style='mso-width-source:userset;mso-width-alt:8228;
+ width:169pt'>
+ <col class=xl25 width=87 style='mso-width-source:userset;mso-width-alt:3181;
+ width:65pt'>
+ <col class=xl24 width=163 style='mso-width-source:userset;mso-width-alt:5961;
+ width:122pt'>
+ <col width=369 style='mso-width-source:userset;mso-width-alt:13494;width:277pt'>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 colspan=3 width=303 style='height:12.75pt;
+  mso-ignore:colspan;width:228pt'>&#1057;&#1086;&#1073;&#1099;&#1090;&#1080;&#1103;
+  ClientMap</td>
+  <td class=xl28 width=87 style='width:65pt'></td>
+  <td class=xl56 width=163 style='width:122pt'></td>
+  <td width=369 style='width:277pt'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl26 style='height:12.75pt'></td>
+  <td class=xl141>&#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1097;.</td>
+  <td class=xl31>&#1080;&#1084;&#1103;</td>
+  <td class=xl30>&#1090;&#1080;&#1087;</td>
+  <td class=xl60>&#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;</td>
+  <td class=xl26>&#1082;&#1086;&#1084;&#1084;&#1077;&#1085;&#1090;&#1072;&#1088;&#1080;&#1081;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl142>void</td>
+  <td class=xl50>onNavigationModeChanged</td>
+  <td colspan=3 class=xl78 style='border-right:.5pt solid black'>&#1089;&#1086;&#1073;&#1099;&#1090;&#1080;&#1077;
+  &#1087;&#1088;&#1080;
+  &#1080;&#1079;&#1084;&#1077;&#1085;&#1077;&#1085;&#1080;&#1080;
+  &#1080;&#1085;&#1089;&#1090;&#1088;&#1091;&#1084;&#1077;&#1085;&#1090;&#1072;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl143>&nbsp;</td>
+  <td class=xl49></td>
+  <td class=xl39 style='border-top:none'>object</td>
+  <td class=xl53 style='border-top:none'>sender</td>
+  <td class=xl40 width=369 style='border-top:none;width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl144>&nbsp;</td>
+  <td class=xl51>&nbsp;</td>
+  <td class=xl42>int</td>
+  <td class=xl54>mode_no</td>
+  <td class=xl38>&#1080;&#1076;&#1077;&#1085;&#1090;&#1080;&#1092;&#1080;&#1082;&#1072;&#1090;&#1086;&#1088;
+  &#1080;&#1085;&#1089;&#1090;&#1088;&#1091;&#1084;&#1077;&#1085;&#1090;&#1072;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl138></td>
+  <td class=xl49></td>
+  <td class=xl28></td>
+  <td class=xl56></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MouseDown</td>
+  <td colspan=3 class=xl78 style='border-right:.5pt solid black'>&#1085;&#1072;&#1078;&#1080;&#1084;&#1072;&#1077;&#1084;
+  &#1084;&#1099;&#1096;&#1091; &#1085;&#1072;
+  &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl91>object</td>
+  <td class=xl24>sender</td>
+  <td class=xl35 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl43>int</td>
+  <td class=xl71>x</td>
+  <td class=xl45>x -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl42>int</td>
+  <td class=xl86>y</td>
+  <td class=xl38>y -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MouseUp</td>
+  <td colspan=3 class=xl78 style='border-right:.5pt solid black'>&#1086;&#1090;&#1087;&#1091;&#1089;&#1082;&#1072;&#1077;&#1084;
+  &#1084;&#1099;&#1096;&#1091; &#1085;&#1072;
+  &#1082;&#1072;&#1088;&#1090;&#1077;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl91>object</td>
+  <td class=xl24>sender</td>
+  <td class=xl35 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl43>int</td>
+  <td class=xl71>x</td>
+  <td class=xl45>x -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl42>int</td>
+  <td class=xl86>y</td>
+  <td class=xl38>y -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MouseClick</td>
+  <td colspan=3 class=xl78 style='border-right:.5pt solid black'>&#1082;&#1083;&#1080;&#1082;
+  &#1087;&#1086; &#1082;&#1072;&#1088;&#1090;&#1077;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl91>object</td>
+  <td class=xl24>sender</td>
+  <td class=xl35 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl43>int</td>
+  <td class=xl71>x</td>
+  <td class=xl45>x -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl42>int</td>
+  <td class=xl86>y</td>
+  <td class=xl38>y -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MouseDblClick</td>
+  <td colspan=3 class=xl78 style='border-right:.5pt solid black'>&#1076;&#1074;&#1086;&#1081;&#1085;&#1086;&#1081;
+  &#1082;&#1083;&#1080;&#1082; &#1087;&#1086;
+  &#1082;&#1072;&#1088;&#1090;&#1077;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl91>object</td>
+  <td class=xl24>sender</td>
+  <td class=xl35 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl43>int</td>
+  <td class=xl71>x</td>
+  <td class=xl45>x -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl42>int</td>
+  <td class=xl86>y</td>
+  <td class=xl38>y -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MapMoveBegin</td>
+  <td colspan=3 class=xl246 style='border-right:.5pt solid black'>&#1053;&#1072;&#1095;&#1080;&#1085;&#1072;&#1077;&#1084;
+  &#1076;&#1074;&#1080;&#1075;&#1072;&#1090;&#1100;
+  &#1082;&#1072;&#1088;&#1090;&#1091;
+  (&#1085;&#1072;&#1078;&#1080;&#1084;&#1072;&#1077;&#1084;
+  &#1084;&#1099;&#1096;&#1082;&#1091;)</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl91>object</td>
+  <td class=xl24>sender</td>
+  <td class=xl35 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl43>int</td>
+  <td class=xl71>x</td>
+  <td class=xl45>x -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl42>int</td>
+  <td class=xl86>y</td>
+  <td class=xl38>y -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MapMove</td>
+  <td colspan=3 class=xl246 style='border-right:.5pt solid black'>&#1044;&#1074;&#1080;&#1075;&#1072;&#1077;&#1084;
+  &#1082;&#1072;&#1088;&#1090;&#1091; &#1084;&#1099;&#1096;&#1086;&#1081;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl91>object</td>
+  <td class=xl24>sender</td>
+  <td class=xl35 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl43>int</td>
+  <td class=xl71>x</td>
+  <td class=xl45>x -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl42>int</td>
+  <td class=xl86>y</td>
+  <td class=xl38>y -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 colspan=3 style='height:12.75pt;mso-ignore:colspan'>&#1057;&#1086;&#1073;&#1099;&#1090;&#1080;&#1103;
+  ClientMap</td>
+  <td class=xl28></td>
+  <td class=xl56></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl26 style='height:12.75pt'></td>
+  <td class=xl141>&#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1097;.</td>
+  <td class=xl31>&#1080;&#1084;&#1103;</td>
+  <td class=xl30>&#1090;&#1080;&#1087;</td>
+  <td class=xl60>&#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;</td>
+  <td class=xl26>&#1082;&#1086;&#1084;&#1084;&#1077;&#1085;&#1090;&#1072;&#1088;&#1080;&#1081;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MapMoved</td>
+  <td colspan=3 class=xl246 style='border-right:.5pt solid black'>&#1054;&#1090;&#1087;&#1091;&#1089;&#1082;&#1072;&#1077;&#1084;
+  &#1084;&#1099;&#1096;&#1091; &#1085;&#1072;
+  &#1089;&#1076;&#1074;&#1080;&#1085;&#1091;&#1090;&#1086;&#1081;
+  &#1082;&#1072;&#1088;&#1090;&#1077;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl91>object</td>
+  <td class=xl24>sender</td>
+  <td class=xl35 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl43>int</td>
+  <td class=xl71>x</td>
+  <td class=xl45>x -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl42>int</td>
+  <td class=xl86>y</td>
+  <td class=xl38>y -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl28></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MapMovedSquared</td>
+  <td class=xl43 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1057;&#1076;&#1074;&#1080;&#1075;
+  &#1082;&#1072;&#1088;&#1090;&#1099;
+  &#1084;&#1099;&#1096;&#1082;&#1086;&#1081;
+  &#1073;&#1086;&#1083;&#1077;&#1077; &#1095;&#1077;&#1084; &#1085;&#1072;
+  &#1082;&#1074;&#1072;&#1076;&#1088;&#1072;&#1090; 256x256 &#1087;&#1082;&#1089;.
+  (&#1086;&#1090;&#1087;&#1091;&#1089;&#1082;&#1072;&#1077;&#1084;
+  &#1084;&#1099;&#1096;&#1091;)</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl149 colspan=2 style='mso-ignore:colspan'>&#1089;
+  &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.1.0.21 &#1080;
+  &#1074;&#1099;&#1096;&#1077;</td>
+  <td class=xl92>object</td>
+  <td class=xl86>sender</td>
+  <td class=xl79 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td class=xl135></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MapCenterChanged</td>
+  <td colspan=3 class=xl243 style='border-right:.5pt solid black'>&#1048;&#1079;&#1084;&#1077;&#1085;&#1077;&#1085;
+  &#1094;&#1077;&#1085;&#1090;&#1088; &#1080;/&#1080;&#1083;&#1080;
+  &#1079;&#1091;&#1084; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;height:13.5pt'>
+  <td height=18 style='height:13.5pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl91>object</td>
+  <td class=xl24>sender</td>
+  <td class=xl35 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl140>&nbsp;</td>
+  <td class=xl93 style='border-left:none'>bool</td>
+  <td class=xl71>squared</td>
+  <td class=xl44 width=369 style='width:277pt'>&#1089;&#1076;&#1074;&#1080;&#1075;
+  &#1087;&#1088;&#1086;&#1080;&#1079;&#1086;&#1096;&#1077;&#1083;
+  &#1073;&#1086;&#1083;&#1077;&#1077; &#1095;&#1077;&#1084; &#1085;&#1072;
+  &#1082;&#1074;&#1072;&#1076;&#1088;&#1072;&#1090; 256&#1093;256
+  &#1087;&#1082;&#1089;.</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl149 colspan=2 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1089;
+  &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.1.0.21 &#1080;
+  &#1074;&#1099;&#1096;&#1077;</td>
+  <td class=xl92 style='border-left:none'>bool</td>
+  <td class=xl86>fixed</td>
+  <td class=xl79 width=369 style='width:277pt'>&#1089;&#1076;&#1074;&#1080;&#1075;
+  &#1076;&#1080;&#1085;&#1072;&#1084;&#1080;&#1095;(onMouseMove)
+  &#1080;&#1083;&#1080;
+  &#1092;&#1080;&#1082;&#1089;&#1080;&#1088;(onMouseMoved)</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MouseMove</td>
+  <td colspan=3 class=xl246 style='border-right:.5pt solid black'>&#1044;&#1074;&#1080;&#1078;&#1077;&#1085;&#1080;&#1077;
+  &#1084;&#1099;&#1078;&#1082;&#1080; &#1085;&#1072;&#1076;
+  &#1086;&#1073;&#1083;&#1072;&#1089;&#1090;&#1100;&#1102;
+  &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl91>object</td>
+  <td class=xl24>sender</td>
+  <td class=xl35 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl43>int</td>
+  <td class=xl71>x</td>
+  <td class=xl45>x -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl42>int</td>
+  <td class=xl86>y</td>
+  <td class=xl38>y -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MapZoomIn</td>
+  <td colspan=3 class=xl210 style='border-right:.5pt solid black'>&#1054;&#1090;&#1088;&#1072;&#1073;&#1072;&#1090;&#1099;&#1074;&#1072;&#1077;&#1090;
+  &#1080;&#1079;&#1084;&#1077;&#1085;&#1077;&#1085;&#1080;&#1077;
+  &#1079;&#1091;&#1084;&#1072; &#1087;&#1086;
+  &#1085;&#1072;&#1074;&#1080;&#1075;&#1072;&#1090;&#1086;&#1088;&#1091;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl93>object</td>
+  <td class=xl71>sender</td>
+  <td class=xl44 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl91>int</td>
+  <td class=xl24>we</td>
+  <td class=xl36>&#1096;&#1080;&#1088;&#1080;&#1085;&#1072;
+  &#1085;&#1086;&#1074;&#1086;&#1075;&#1086;
+  &#1088;&#1072;&#1089;&#1090;&#1088;&#1072;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl93>int</td>
+  <td class=xl71>he</td>
+  <td class=xl45>&#1074;&#1099;&#1089;&#1086;&#1090;&#1072;
+  &#1085;&#1086;&#1074;&#1086;&#1075;&#1086;
+  &#1088;&#1072;&#1089;&#1090;&#1088;&#1072;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl91>int</td>
+  <td class=xl24>center_x</td>
+  <td class=xl36>&#1094;&#1077;&#1085;&#1090;&#1088; X
+  &#1085;&#1086;&#1074;&#1086;&#1075;&#1086;
+  &#1088;&#1072;&#1089;&#1090;&#1088;&#1072;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl93>int</td>
+  <td class=xl71>center_y</td>
+  <td class=xl45>&#1094;&#1077;&#1085;&#1090;&#1088; Y
+  &#1085;&#1086;&#1074;&#1086;&#1075;&#1086;
+  &#1088;&#1072;&#1089;&#1090;&#1088;&#1072;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MapZoomOut</td>
+  <td class=xl94 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1054;&#1090;&#1088;&#1072;&#1073;&#1072;&#1090;&#1099;&#1074;&#1072;&#1077;&#1090;
+  &#1080;&#1079;&#1084;&#1077;&#1085;&#1077;&#1085;&#1080;&#1077;
+  &#1079;&#1091;&#1084;&#1072; &#1087;&#1086;
+  &#1085;&#1072;&#1074;&#1080;&#1075;&#1072;&#1090;&#1086;&#1088;&#1091;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl93>object</td>
+  <td class=xl71>sender</td>
+  <td class=xl44 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl43 style='border-top:none'>int</td>
+  <td class=xl71 style='border-top:none'>x</td>
+  <td class=xl45 style='border-top:none'>x -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl42>int</td>
+  <td class=xl86>y</td>
+  <td class=xl38>y -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl28></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl28></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl28></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 colspan=3 style='height:12.75pt;mso-ignore:colspan'>&#1057;&#1086;&#1073;&#1099;&#1090;&#1080;&#1103;
+  ClientMap</td>
+  <td class=xl28></td>
+  <td class=xl56></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl26 style='height:12.75pt'></td>
+  <td class=xl141>&#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1097;.</td>
+  <td class=xl31>&#1080;&#1084;&#1103;</td>
+  <td class=xl30>&#1090;&#1080;&#1087;</td>
+  <td class=xl60>&#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;</td>
+  <td class=xl26>&#1082;&#1086;&#1084;&#1084;&#1077;&#1085;&#1090;&#1072;&#1088;&#1080;&#1081;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MapZoomInPxls</td>
+  <td class=xl94 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1054;&#1090;&#1088;&#1072;&#1073;&#1072;&#1090;&#1099;&#1074;&#1072;&#1077;&#1090;
+  &#1080;&#1079;&#1084;&#1077;&#1085;&#1077;&#1085;&#1080;&#1077;
+  &#1079;&#1091;&#1084;&#1072; &#1087;&#1086;
+  &#1085;&#1072;&#1074;&#1080;&#1075;&#1072;&#1090;&#1086;&#1088;&#1091;
+  &#1073;&#1077;&#1079; &#1086;&#1073;&#1083;&#1072;&#1089;&#1090;&#1080;
+  &#1074;&#1099;&#1073;&#1086;&#1088;&#1072;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl93>object</td>
+  <td class=xl71>sender</td>
+  <td class=xl44 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl43 style='border-top:none'>int</td>
+  <td class=xl71 style='border-top:none'>x</td>
+  <td class=xl45 style='border-top:none'>x -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl42>int</td>
+  <td class=xl86>y</td>
+  <td class=xl38>y -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MapZoomScroll</td>
+  <td class=xl94 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1054;&#1090;&#1088;&#1072;&#1073;&#1072;&#1090;&#1099;&#1074;&#1072;&#1077;&#1090;
+  &#1080;&#1079;&#1084;&#1077;&#1085;&#1077;&#1085;&#1080;&#1077;
+  &#1079;&#1091;&#1084;&#1072; &#1087;&#1086;
+  &#1089;&#1082;&#1088;&#1086;&#1083;&#1083;&#1091;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl93>object</td>
+  <td class=xl71>sender</td>
+  <td class=xl44 width=369 style='width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl43 style='border-top:none'>int</td>
+  <td class=xl71 style='border-top:none'>x</td>
+  <td class=xl45 style='border-top:none'>x -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl42>int</td>
+  <td class=xl86>y</td>
+  <td class=xl38>y -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl93 style='border-top:none'>int</td>
+  <td class=xl71 style='border-top:none'>direct</td>
+  <td class=xl45 style='border-top:none'>&#1085;&#1072;&#1087;&#1088;&#1072;&#1074;&#1083;&#1077;&#1085;&#1080;&#1077;
+  &#1089;&#1082;&#1088;&#1086;&#1083;&#1072;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.ChangeZoom</td>
+  <td colspan=3 class=xl248 style='border-right:.5pt solid black'>&#1048;&#1079;&#1084;&#1077;&#1085;&#1077;&#1085;&#1080;&#1077;
+  &#1079;&#1091;&#1084;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl93 style='border-top:none'>object</td>
+  <td class=xl71 style='border-top:none'>sender</td>
+  <td class=xl44 width=369 style='border-top:none;width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  ClientMap</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl93 style='border-top:none'>int</td>
+  <td class=xl71 style='border-top:none'>new_zoom</td>
+  <td class=xl45 style='border-top:none'>&#1085;&#1086;&#1074;&#1099;&#1081;
+  &#1079;&#1091;&#1084;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>string</td>
+  <td class=xl82>GetHintText</td>
+  <td colspan=3 class=xl248 style='border-right:.5pt solid black'>&#1055;&#1086;&#1083;&#1091;&#1095;&#1072;&#1077;&#1090;
+  &#1080; &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1097;&#1077;&#1090;
+  &#1090;&#1077;&#1082;&#1089;&#1090;
+  &#1087;&#1086;&#1076;&#1089;&#1082;&#1072;&#1079;&#1082;&#1080;
+  &#1076;&#1083;&#1103; &#1074;&#1099;&#1074;&#1086;&#1076;&#1072;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl93 style='border-top:none'>string</td>
+  <td class=xl71 style='border-top:none'>internal_text</td>
+  <td class=xl45 style='border-top:none'>&#1090;&#1077;&#1082;&#1089;&#1090;
+  &#1087;&#1086;&#1076;&#1089;&#1082;&#1072;&#1079;&#1082;&#1080;
+  (&#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1097;&#1072;&#1077;&#1090;&#1089;&#1103;
+  &#1087;&#1086; &#1091;&#1084;&#1086;&#1083;&#1095;&#1072;&#1085;&#1080;&#1102;)</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl93 style='border-top:none'>object[]</td>
+  <td class=xl71 style='border-top:none'>objs</td>
+  <td class=xl45 style='border-top:none'>&#1084;&#1072;&#1089;&#1089;&#1080;&#1074;
+  &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1086;&#1074;
+  &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>GlobalEvents.MouseMove</td>
+  <td colspan=3 class=xl248 style='border-right:.5pt solid black'>&#1043;&#1083;&#1086;&#1073;&#1072;&#1083;&#1100;&#1085;&#1086;&#1077;
+  &#1089;&#1086;&#1073;&#1099;&#1090;&#1080;&#1077; &#1087;&#1088;&#1080;
+  MouseMove</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl93 style='border-top:none'>param</td>
+  <td class=xl71 style='border-top:none'>evnt</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>GlobalEvents.Mouse_Down</td>
+  <td colspan=3 class=xl248 style='border-right:.5pt solid black'>&#1043;&#1083;&#1086;&#1073;&#1072;&#1083;&#1100;&#1085;&#1086;&#1077;
+  &#1089;&#1086;&#1073;&#1099;&#1090;&#1080;&#1077; &#1087;&#1088;&#1080;
+  Mouse_Down</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl93 style='border-top:none'>param</td>
+  <td class=xl71 style='border-top:none'>evnt</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>GlobalEvents.Mouse_Up</td>
+  <td colspan=3 class=xl248 style='border-right:.5pt solid black'>&#1043;&#1083;&#1086;&#1073;&#1072;&#1083;&#1100;&#1085;&#1086;&#1077;
+  &#1089;&#1086;&#1073;&#1099;&#1090;&#1080;&#1077; &#1087;&#1088;&#1080;
+  Mouse_Up</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl93 style='border-top:none'>param</td>
+  <td class=xl71 style='border-top:none'>evnt</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>GlobalEvents.Key_Down</td>
+  <td colspan=3 class=xl248 style='border-right:.5pt solid black'>&#1043;&#1083;&#1086;&#1073;&#1072;&#1083;&#1100;&#1085;&#1086;&#1077;
+  &#1089;&#1086;&#1073;&#1099;&#1090;&#1080;&#1077; &#1087;&#1088;&#1080;
+  Key_Down</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl93 style='border-top:none'>param</td>
+  <td class=xl71 style='border-top:none'>evnt</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>GlobalEvents.Key_Up</td>
+  <td colspan=3 class=xl248 style='border-right:.5pt solid black'>&#1043;&#1083;&#1086;&#1073;&#1072;&#1083;&#1100;&#1085;&#1086;&#1077;
+  &#1089;&#1086;&#1073;&#1099;&#1090;&#1080;&#1077; &#1087;&#1088;&#1080;
+  Key_Up</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl147>&nbsp;</td>
+  <td class=xl86>&nbsp;</td>
+  <td class=xl93 style='border-top:none'>param</td>
+  <td class=xl71 style='border-top:none'>evnt</td>
+  <td class=xl45 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 colspan=3 style='height:12.75pt;mso-ignore:colspan'>&#1057;&#1086;&#1073;&#1099;&#1090;&#1080;&#1103;
+  ClientMap</td>
+  <td class=xl28></td>
+  <td class=xl56></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl26 style='height:12.75pt'></td>
+  <td class=xl141>&#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1097;.</td>
+  <td class=xl31>&#1080;&#1084;&#1103;</td>
+  <td class=xl30>&#1090;&#1080;&#1087;</td>
+  <td class=xl60>&#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;</td>
+  <td class=xl26>&#1082;&#1086;&#1084;&#1084;&#1077;&#1085;&#1090;&#1072;&#1088;&#1080;&#1081;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MouseIdle</td>
+  <td class=xl93 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1042;&#1099;&#1079;&#1099;&#1074;&#1072;&#1077;&#1090;&#1089;&#1103;
+  &#1087;&#1088;&#1080;
+  &#1079;&#1072;&#1084;&#1080;&#1088;&#1072;&#1085;&#1080;&#1080;
+  &#1084;&#1099;&#1096;&#1082;&#1080; &#1085;&#1072;&#1076;
+  &#1082;&#1072;&#1088;&#1090;&#1086;&#1081; (~ 600ms)</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl93 style='border-top:none'>object</td>
+  <td class=xl71 style='border-top:none'>sender</td>
+  <td class=xl44 width=369 style='border-top:none;width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  <font class="font6">ClientMap</font></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl43 style='border-top:none'>int</td>
+  <td class=xl71 style='border-top:none'>x</td>
+  <td class=xl45 style='border-top:none'>x -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl139 colspan=2 style='mso-ignore:colspan'>&#1089;
+  &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.2.0.28 &#1080;
+  &#1074;&#1099;&#1096;&#1077;</td>
+  <td class=xl42>int</td>
+  <td class=xl86>y</td>
+  <td class=xl38>y -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl148></td>
+  <td class=xl24></td>
+  <td class=xl25></td>
+  <td class=xl24></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl145>void</td>
+  <td class=xl82>MapEvents.MouseSleep</td>
+  <td class=xl93 colspan=3 style='mso-ignore:colspan;border-right:.5pt solid black'>&#1042;&#1099;&#1079;&#1099;&#1074;&#1072;&#1077;&#1090;&#1089;&#1103;
+  &#1087;&#1088;&#1080;
+  &#1079;&#1072;&#1084;&#1080;&#1088;&#1072;&#1085;&#1080;&#1080;
+  &#1084;&#1099;&#1096;&#1082;&#1080; &#1085;&#1072;&#1076;
+  &#1082;&#1072;&#1088;&#1090;&#1086;&#1081;
+  (&#1074;&#1088;&#1077;&#1084;&#1103;
+  &#1086;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1103;&#1077;&#1090;&#1089;&#1103;
+  &#1087;&#1072;&#1088;-&#1086;&#1084; <font class="font15">MouseSleepTime</font><font
+  class="font6">)</font></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl93 style='border-top:none'>object</td>
+  <td class=xl71 style='border-top:none'>sender</td>
+  <td class=xl44 width=369 style='border-top:none;width:277pt'>&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;
+  <font class="font6">ClientMap</font></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl146>&nbsp;</td>
+  <td class=xl24></td>
+  <td class=xl43 style='border-top:none'>int</td>
+  <td class=xl71 style='border-top:none'>x</td>
+  <td class=xl45 style='border-top:none'>x -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl139 colspan=2 style='mso-ignore:colspan'>&#1089;
+  &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.2.0.28 &#1080;
+  &#1074;&#1099;&#1096;&#1077;</td>
+  <td class=xl42>int</td>
+  <td class=xl86>y</td>
+  <td class=xl38>y -
+  &#1082;&#1086;&#1086;&#1088;&#1076;&#1080;&#1085;&#1072;&#1090;&#1072;
+  &#1084;&#1099;&#1096;&#1080;
+  &#1086;&#1090;&#1085;&#1086;&#1089;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;
+  &#1094;&#1077;&#1085;&#1090;&#1088;&#1072; &#1082;&#1072;&#1088;&#1090;&#1099;</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=14 style='width:11pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=225 style='width:169pt'></td>
+  <td width=87 style='width:65pt'></td>
+  <td width=163 style='width:122pt'></td>
+  <td width=369 style='width:277pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
